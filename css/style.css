@@ -1,0 +1,503 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: system-ui;
+}
+/* -------------------navbar section----------------------- */
+#navbar-s{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to left, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to left, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    padding: 2px 10px;
+}
+
+.navbar-nav{
+    align-items: center;    
+}
+
+.navbar-brand img{
+    margin-left: 12px;
+    height: 45px;
+}
+
+.navbar-toggler{
+    background-color: #e1dfdf;
+    font-size: 15px;
+    padding: 5px 8px;
+}
+
+.nav-item{
+    margin: 0px 4px;
+}
+
+.nav-link{
+    color: rgb(224, 181, 151) !important;
+    /* color: rgb(207, 154, 207) !important; */
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: #fff !important;
+    transition: 0.5s;
+}
+
+.active{
+    color: white !important;
+}
+
+.ig{
+    font-size: 25px;
+}
+
+/* --------------------for all sections classes---------------------- */
+.sections{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ------------------sections title---------------------- */
+.section-title{
+    font-size: 38px;
+    text-transform: uppercase;
+    margin: 30px 0px 50px 0px;
+}
+
+.section-title::before{
+    content: '';
+    background: rgb(138, 80, 42);
+    /* background: rgb(120, 65, 141); */
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.section-title::after{
+    content: '';
+    background: rgb(138, 80, 42);
+    /* background: rgb(120, 65, 141); */
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(9px);
+}
+
+
+
+/* -- ----------------------top section---------------------- -- */
+.jumbotron{
+    background-image: linear-gradient(to left, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to left, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    border-radius: 0px!important;
+    text-align: center;
+    /* padding: 4em 7em; */
+    padding: 40px 120px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.jumbotron > .row{
+    margin: 0px;
+}
+
+.l-half{
+    text-align: start;
+}
+
+.display-4{
+    margin: 15px 0px;
+    font-size: 40px;
+    color: #fff;
+    text-align: start;
+}
+
+.display-4 i{
+    font-size: 30px;
+    color: rgb(159, 83, 45);
+    color: #fff;
+    
+}
+
+.lead{
+    color: #d8d8d8;
+    text-align: start;
+
+}
+
+.my-4{
+    background-color: #fff;
+}
+
+.top-des{
+    color: #fff;
+    text-align: start;
+}
+
+.btn-primary{
+    background-image: linear-gradient(to right, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to right, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    border-radius: 40px;
+    border: 2px solid rgb(136, 81, 29);
+    margin: 30px 0px;
+}
+.btn-primary:hover{
+    border-color: #fff;
+}
+
+.r-half{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r-half > img{
+    width: 70%;
+    border-radius: 50% 50%
+}
+
+@media (max-width: 768px) {
+    .jumbotron{
+        padding: 10px;
+    }
+    .jumbotron > .row{
+        flex-direction: column-reverse;
+    }
+    .l-half{
+        text-align: center;
+    }
+    .r-half > img{
+        width: 55%;
+        margin: 40px 0px 70px 0px;
+    }
+}
+  
+@media (max-width: 576px) {
+    .jumbotron{
+        padding: 10px;
+    }
+    .l-half{
+        text-align: center;
+    }
+    .r-half > img{
+        width: 80%;
+        margin: 20px 0px 40px 0px;
+    }
+}
+
+/* ---------------------this box is for the wave below the top jumbotron---------------------- */
+.box-wave-jumbotron {
+    --size: 75px;
+    --R: calc(var(--size)*1.28);
+  
+    -webkit-mask:
+      radial-gradient(var(--R) at 50% calc(1.8*var(--size)),#000 99%,#0000 101%) 
+        calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+      radial-gradient(var(--R) at 50% calc(-.8*var(--size)),#0000 99%,#000 101%) 
+        50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+    background: linear-gradient(to right, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to right, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    height: 150px;
+    transform: rotate(180deg);
+    position:relative;
+    top: -5px;
+    border: none;
+  }
+
+
+/* ----------------------work section---------------------- */
+#work-s{
+    text-align: center;
+    padding-top: 0px;
+}
+.section-headline{
+    font-family: serif;
+}
+
+#work-s > .points{
+    padding: 30px 60px;
+    text-align: justify;
+}
+
+.picture{
+    width: 200px;
+    border-radius: 30px;
+    /* margin-left: 50%;
+    transform: translate(-50%); */
+}
+
+
+/* ----------------------byMe section---------------------- */
+
+.cards-container{
+    padding: 30px 40px;
+}
+
+#byMe-s{
+    background-color: #dfbc9954;
+    /* background-color: rgba(197, 157, 197, 0.274); */
+    padding-bottom: 0px;
+}
+
+#byMe-s > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%!important;
+  }
+  
+#byMe-s > .container > .card {
+    width: calc(25% - 20px);
+    margin: 25px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+#byMe-s > .container > .card > img{
+    border-radius: 5px;
+    padding: 16px;
+    padding-bottom: 0px;
+}
+
+#byMe-s > .container > .card:hover img{
+    transition: 0.7s;
+    transform: scale(1.08);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.middle{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.react{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.react > a{
+    color: black;
+}
+
+.react > a:hover{
+    color: red;
+}
+
+.react > a > i{
+    font-size: 19px;
+}
+
+.react > .response{
+    display: flex;
+    align-items: center;
+}
+
+.react > .response > a{
+    color: black;
+}
+.react > .response > a:hover{
+    color: red;
+}
+
+.react > .response > a >i{
+    margin: 0px 5px;
+    font-size: 19px;
+}
+  
+@media (max-width: 768px) {
+    #byMe-s > .container > .card {
+      width: calc(50% - 20px);
+    }
+}
+  
+@media (max-width: 576px) {
+    #byMe-s > .container > .card {
+      width: calc(100% - 20px);
+      margin-bottom: 20px;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .jumbotron > .row{
+        flex-direction: column-reverse;
+    }
+    /* .l-half{
+        max-width: 90%!important;
+    } */
+
+    .display-4{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .display-4 > i{
+        font-size: 25px;
+    }
+    .btn-primary{
+        width: 80%;
+        text-align: center;
+    }
+    .section-headline{
+        font-size: 23px;
+        padding: 0px 20px;
+    }
+    #work-s > .points {
+        padding: 30px 30px;
+    }
+    .section-title{
+        font-size: 30px;
+        padding: 0px 12px;
+    }
+    .section-title::before{
+        height: 3px;
+        transform: translateY(58px);
+    }
+    .section-title::after{
+        height: 9px;
+        width: 40px;
+        transform: translateY(16px);
+    }
+    .cards-container {
+        padding: 30px 20px;
+    }
+}
+
+/* -----------------------footer section----------------------- */
+.footer-s{
+    background-color: #dfbc9954;
+    /* background-color: rgba(197, 157, 197, 0.274); */
+
+}
+
+/* ---------------------this box is for the wave below the top jumbotron---------------------- */
+.box-wave-footer {
+    --size: 70px;
+    --R: calc(var(--size)*1.28);
+
+    -webkit-mask:
+      radial-gradient(var(--R) at 50% calc(1.8*var(--size)),#000 99%,#0000 101%) 
+        calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+      radial-gradient(var(--R) at 50% calc(-.8*var(--size)),#0000 99%,#000 101%) 
+        50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+    background: linear-gradient(to left, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to left, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    height: 109px;
+    position: relative;
+    bottom: -3px;
+    border: none;
+  }
+
+.footer{
+    height: 250px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(138, 80, 42), rgb(165, 105, 72));
+    /* background-image: linear-gradient(to left, rgb(143, 93, 163), rgb(103, 16, 110)); */
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+.footer > .col-12{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.col-5 img{
+    width: 90%;
+    padding: 15px;
+}
+.col-5 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col-5 ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.col-5 ul li a{
+    color: rgb(224, 181, 151) !important;
+}
+.col-5 ul li a:hover{
+    color: #fff!important;
+}
+
+.col-7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-7 input{
+    width: 70%;
+    height: 50px;
+    padding: 18px;
+    border-radius: 40px;
+    border: none;
+}
+.col-7 button{
+    border: none;
+    border-radius: 40px;
+    margin-left: 5px;
+    background-color: #fff
+}
+.col-7 button i{
+    color: black;
+    padding: 18px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer{
+        height: fit-content;
+        
+    }
+    .footer .col-12{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .col-5{
+        max-width: 95%;
+        margin-bottom: 20px;
+        margin-bottom: 0px;
+    }
+    .col-5 img{
+        width: 60%;
+    }
+    .col-5 ul{
+        padding: 4px;
+        flex-direction: column;
+    }
+    .col-5 ul li a{
+        font-size: 13px;
+    }
+    .col-7{
+        max-width: 100%;
+        padding: 0px;
+    }
+    .col-7 input{
+        height: 40px;
+        width: 65%;
+    }
+    .col-7 button{
+      height: 40px; 
+      width: 40px; 
+    }
+    .col-7 button i{
+        padding: 0px;
+    }
+
+}
